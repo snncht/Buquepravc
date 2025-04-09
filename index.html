@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Uma Surpresa</title>
+  <style>
+    body {
+      background-color: #fffaf0;
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      padding-top: 100px;
+    }
+
+    #surpresa {
+      display: none;
+      margin-top: 30px;
+    }
+
+    button {
+      font-size: 18px;
+      padding: 12px 24px;
+      background-color: #ffde59;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #ffd000;
+    }
+
+    img {
+      max-width: 300px;
+      margin-top: 20px;
+      border-radius: 12px;
+    }
+
+    p {
+      font-size: 20px;
+      margin-top: 15px;
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+
+  <button onclick="mostrarSurpresa()">Clique para ver sua surpresa</button>
+
+  <div id="surpresa">
+    <img src="buque.gif" alt="Buquê de Girassóis">
+    <p>Sei que não posso te entregar pessoalmente ainda, mas saiba q penso em ti de longe.</p>
+  </div>
+
+  <script>
+    function mostrarSurpresa() {
+      document.getElementById('surpresa').style.display = 'block';
+    }
+  </script>
+
+</body>
+</html>
